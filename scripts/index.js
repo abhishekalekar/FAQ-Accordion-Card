@@ -25,7 +25,7 @@ function answerMultiple (elementClick) {
     for (var i = 0; i < allQuestions.length; i++) {
         if (
             allQuestions[i]
-            .querySelector(".question")
+            .querySelector(".faq-question")
             .classList.toString()
             .includes("active-question") &&
             allQuestions[i].querySelector(".question").classList !==
@@ -46,9 +46,9 @@ function displayAnswer(elementClick) {
 }
 
 function toggleQuestion(elementClick) {
-    elementClick.querySelector(".question").classList.toggle("active-question");
+    elementClick.querySelector(".faq-question").classList.toggle("active-question");
 
-    var answer = elementClick.querySelector(".answer");
+    var answer = elementClick.querySelector(".faq-answer");
 
 
     if (answer.style.maxHeight) {

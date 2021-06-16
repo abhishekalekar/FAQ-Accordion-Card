@@ -28,8 +28,8 @@ function answerMultiple (elementClick) {
             .querySelector(".faq-question")
             .classList.toString()
             .includes("active-question") &&
-            allQuestions[i].querySelector(".question").classList !==
-            elementClick.querySelector(".question").classList
+            allQuestions[i].querySelector(".faq-question").classList !==
+            elementClick.querySelector(".faq-question").classList
         ) {
             toggleQuestion(allQuestions[i]);
             arrowRotate(allQuestions[i]);
